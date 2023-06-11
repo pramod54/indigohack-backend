@@ -37,7 +37,7 @@ class BookingController():
 
     def update_booking(self, data: dict) -> (dict, int, str):
         try:
-            new_booking = Booking.objects.update(**data)
+            new_booking = Booking.objects.filter(id=data.get('booking_id')).update(**data)
             return new_booking, 0, "Booking update failed."
         except Exception:
             return None, 1, "Booking update failed."
