@@ -1,6 +1,6 @@
 from django.urls import path
-from bookings.views.user import User
+from bookings.views.Booking import Booking
 
 ulrpatterns = [
-    path(r'^user', User.as_view(), name='user')
+    path(r'^booking/', Booking.as_view(), name='user')
 ]

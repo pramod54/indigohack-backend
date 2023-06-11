@@ -82,8 +82,8 @@ DATABASES = {
 		'NAME': 'sampledb',
 		'USER': 'mysql',
 		'PASSWORD': 'password',
-		'HOST': '10.142.146',
-		'PORT': '77',
+		'HOST': 'mysql',
+		'PORT': '3306',
 		'TIME_ZONE': 'Asia/Kolkata'
 	},
 }
