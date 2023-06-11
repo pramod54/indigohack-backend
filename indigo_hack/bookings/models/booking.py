@@ -10,6 +10,7 @@ class Booking(BaseModel):
     returnTrip = models.BooleanField(default=False)
     passengers = models.IntegerField()
     currencyType = models.CharField(max_length=100)
+    active = models.BooleanField(deafult=True)
 
     class Meta:
         db_table = 'bookings'
