@@ -3,7 +3,6 @@ from django.utils import timezone
 
 
 class BaseModel(models.Model):
-    active = models.Boolean(default=True)
     created_at = models.DateTimeField(default=timezone.now())
     updated_at = models.DateTimeField(default=timezone.now())
 

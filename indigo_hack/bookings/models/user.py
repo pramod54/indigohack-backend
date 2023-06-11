@@ -7,7 +7,8 @@ class User(BaseModel):
     phone_number = models.CharField(max_length=50)
     email_id = models.CharField(max_length=50)
     active = models.BooleanField(deafult=True)
-
+    userType = models.CharField(null=True)
+    
     class Meta:
         db_table = 'user'
         
