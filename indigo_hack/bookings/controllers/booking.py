@@ -3,6 +3,8 @@ from indigo_hack.bookings.models.booking import Booking
 
 
 class BookingController():
+    def __init__(self):
+        pass
 
     def generate_booking_payload(self, data: dict, user_id:int) -> dict:
         return {
