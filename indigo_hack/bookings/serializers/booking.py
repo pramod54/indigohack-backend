@@ -23,7 +23,8 @@ class BookingSerializer(serializers.BaseSerializer):
             "toPlace": data.fromPlace,
             "returnTrip": data.returnTrip,
             "passengers": data.passengers,
-            "currency": data.currencyType
+            "currency": data.currencyType,
+            "created_at": data.created_at
         }
 
 
@@ -43,5 +44,6 @@ class BookingUpdateSerializer(serializers.BaseSerializer):
             "toPlace": data.fromPlace,
             "returnTrip": data.returnTrip,
             "passengers": data.passengers,
-            "currency": data.currencyType
+            "currency": data.currencyType,
+            "created_at": data.created_at
         }
